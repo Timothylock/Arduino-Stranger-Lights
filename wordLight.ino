@@ -25,7 +25,7 @@ void loop() {
   // Turn on individual lights
   for (int i = 0; i < displayWord.length(); i++) {
     // Turn on light
-    strip.setPixelColor(alphabet.indexOf(displayWord[i])*2, strip.Color(244, 220, 66));
+    strip.setPixelColor(alphabet.indexOf(displayWord[i])*2, strip.Color(random(0, 250), random(0, 250), random(0, 250)));
     strip.show();
 
     delay(1500);
@@ -35,7 +35,7 @@ void loop() {
   }
 
   // Turn on all the lights for the word
-  allTurn(displayWord, strip.Color(244, 220, 66), alphabet);
+  allTurn(displayWord, strip.Color(random(0, 250), random(0, 250), random(0, 250)), alphabet);
 
   delay(2000);
 
