@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   String displayWord = "readers"; // Use lowercase
-  String alphabet = "abcdefghqponmkjixrstuvwxyz";
+  String alphabet = "abcdefghqponmlkjixrstuvwxyz";
   
   // Turn on individual lights
   for (int i = 0; i < displayWord.length(); i++) {
